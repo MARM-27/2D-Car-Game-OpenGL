@@ -1,5 +1,9 @@
 /* Main Project URL: https://github.com/md-rubel/2D-Car-Game-OpenGL  */
 
+#define UNICODE
+#include <windows.h>
+#include <mmsystem.h>
+#pragma comment(lib, "winmm.lib")
 #include <windows.h>
 #ifdef __APPLE__
 #include <GLUT/glut.h>
@@ -248,9 +252,6 @@ void startGame()
         start = 0;
         gv = 1;
     }
-
-/* Main Project URL: https://github.com/md-rubel/2D-Car-Game-OpenGL  */
-
     //Opposite car 2
     glColor3f(0.000, 0.000, 0.000);
     glBegin(GL_POLYGON);
@@ -439,7 +440,6 @@ void fristDesign()
     glVertex2f(32 - 4, 50 - 15 + 10);
     glEnd();
 
-    //Text Information in First Page
     if (gv == 1)
     {
         glColor3f(1.000, 0.000, 0.000);
@@ -465,7 +465,6 @@ void fristDesign()
 
     glColor3f(0.000, 1.000, 1.000);
     renderBitmapString(30 - 5, 50 - 40, (void *)font3, "MD RUBEL");
-    /* Main Project URL: https://github.com/md-rubel/2D-Car-Game-OpenGL  */
     renderBitmapString(30 - 8, 50 - 43, (void *)font3, "152-15-6037");
 }
 
@@ -535,7 +534,7 @@ void processKeys(unsigned char key, int x, int y)
     case ' ':
         if (start == 0)
         {
-            PlaySound("car.wav", NULL, SND_ASYNC|SND_FILENAME|SND_LOOP);
+            PlaySound(L"Tokyo Drift-Teriyaki Boyz - (Raag.Fm).wav", NULL, SND_ASYNC|SND_FILENAME|SND_LOOP);
             start = 1;
             gv = 0;
             FPS = 50;
@@ -576,7 +575,6 @@ int main(int argc, char *argv[])
     glutInitWindowPosition(200, 20);
     glutCreateWindow("2D-Car-Game by MD RUBEL");
 
-    /* Main Project URL: https://github.com/md-rubel/2D-Car-Game-OpenGL  */
 
     glutDisplayFunc(display);
     glutSpecialFunc(spe_key);
