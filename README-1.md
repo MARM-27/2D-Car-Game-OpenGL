@@ -111,6 +111,44 @@ g++ main.cpp -o car-game.exe -lopengl32 -lglu32 -lfreeglut -lwinmm
 > ⚠️ Make sure `car-game.exe`, `car.wav`, and all assets are in the **same folder**.
 
 ---
+## ✅ Advantages of GLUT
+
+- Lightweight and beginner-friendly  
+- Cross-platform  
+- Simple to use for educational projects  
+
+## ❌ Disadvantages of GLUT
+
+- Outdated and not suitable for modern complex 3D apps  
+- No shader or modern pipeline support  
+- Limited input/sound/media functionality  
+
+## 🔁 Alternatives
+
+### SFML
+- ✅ Better graphics and multimedia support  
+- ❌ Slightly higher learning curve  
+
+### SDL
+- ✅ Powerful for cross-platform games  
+- ❌ More boilerplate code  
+
+### GLFW
+- ✅ Modern OpenGL context creation  
+- ❌ Needs separate image/audio libraries  
+
+---
+
+## ❓ Basic Queries
+
+### How is collision detection implemented?
+By checking if the bounding boxes of the player’s car and enemy car overlap based on their x and y coordinates.
+
+### How does the game increase difficulty?
+Every 5 points scored, the enemy car’s speed increases by `0.1`, making it harder to dodge.
+
+### What happens when a collision occurs?
+The `collision()` function detects contact and sets the game state to over, which displays a "Game Over" screen and halts further input.
 
 ## 📈 Observations & Learnings
 
