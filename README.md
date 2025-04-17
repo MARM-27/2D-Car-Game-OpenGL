@@ -2,12 +2,7 @@
 🔗 Project Repository
 2D Car Game on GitHub
 
-👤 Project Investigated By
-1. Marm Bhatt - 202401408
-2. Kuldeep Solanki - 202404040
-3. Raj Sutariya - 202401221
-4. Harsh Patel - 202401261
-5. Harshil Tejot - 202401265
+👤 Project
 Course: DSA Lab 
 Semester: Winter 2025
 Institution: DAIICT
