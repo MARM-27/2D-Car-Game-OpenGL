@@ -46,13 +46,14 @@ To analyze and understand the core logic and structure of a 2D car racing game i
 
 ## 📷 Screenshots
 
-> _(Add actual screenshots here if available)_
 
 - **In-Game:**  
   _Gameplay showcasing car movement and obstacles_
+![Screenshot 2025-04-17 003254](https://github.com/user-attachments/assets/ce805cad-b7cb-49c8-82c6-d0f8e8572228)
 
 - **Game Over Screen:**  
   _Display after a collision occurs_
+![Screenshot 2025-04-17 003305](https://github.com/user-attachments/assets/f0e7fc1f-e12d-48f1-832e-55cff911e37b)
 
 ---
 
